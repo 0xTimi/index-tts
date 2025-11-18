@@ -39,7 +39,7 @@ def load():
             extra_cuda_cflags=[
                 "-O3",
                 "-gencode",
-                "arch=compute_70,code=sm_70",
+                "arch=compute_80,code=sm_80",  # 改为Ampere架构(A100/你的GPU)
                 "--use_fast_math",
             ]
             + extra_cuda_flags
